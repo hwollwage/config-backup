@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/edelweiss/.config/old-autostart-scripts/disable-touchscreen.sh
+Icon=application-x-executable-script
+Name=disable-touchscreen.sh
+Type=Application
+X-KDE-AutostartScript=true
