@@ -2,6 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# fzf (fuzzy finder)
+fopen() {
+  find "${1:-.}" -maxdepth 1 | fzf --bind 'enter:execute(xdg-open {} &)'
+}
+
 # SSH NGENTOD .bashrc
 # Start the ssh-agent if it is not already running and add key(s)
 if [ -z "$SSH_AUTH_SOCK" ]; then
@@ -102,6 +107,9 @@ fi
 
 alias sht="shutdown -h now"
 alias rbt="reboot"
+alias ex="exit"
+alias exi="exit"
+alias adog='git log --all --decorate --oneline --graph'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
