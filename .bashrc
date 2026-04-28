@@ -2,6 +2,23 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+fnav() {
+  local dir="${1:-$PWD}"
+  while true; do
+    selection=$(find "$dir" -maxdepth 1 -mindepth 1 2>/dev/null | \
+      fzf --prompt="fzf > " \
+          --preview 'ls -lah {}')
+
+    [ -z "$selection" ] && break
+
+    if [ -d "$selection" ]; then
+      dir="$selection"
+    else
+      xdg-open "$selection" &
+    fi
+  done
+}
+
 # fzf (fuzzy finder)
 fopen() {
   find "${1:-.}" -maxdepth 1 | fzf --bind 'enter:execute(xdg-open {} &)'
