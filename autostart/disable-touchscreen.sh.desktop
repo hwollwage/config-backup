@@ -1,4 +1,5 @@
 [Desktop Entry]
+# thinkpad t14 g2 ku
 Exec=/home/edelweiss/.config/old-autostart-scripts/disable-touchscreen.sh
 Icon=application-x-executable-script
 Name=disable-touchscreen.sh
