@@ -17,12 +17,15 @@ alias grep='grep --color=auto'
 
 # ALIASES MOD
 alias h='history'
-alias adog='git log --all --decorate --oneline --graph'
+alias adog='git log --all --decorate --oneline --graph' #git config --global alias.adog "log --all --deco......"
 alias src='source ~/.bashrc'
 alias ex='exit'
 alias exi='exit'
 alias sht='shutdown -h now'
 alias rbt='reboot'
+alias CD='cd'
+alias LS='ls'
+alias rst='reset'
 
 PS1='[\u@\h \W]\$ '
 
