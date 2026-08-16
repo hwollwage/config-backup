@@ -18,6 +18,7 @@ alias grep='grep --color=auto'
 # ALIASES MOD
 alias h='history'
 alias adog='git log --all --decorate --oneline --graph' #git config --global alias.adog "log --all --deco......"
+alias open='xdg-open'
 alias src='source ~/.bashrc'
 alias ex='exit'
 alias exi='exit'
@@ -26,12 +27,16 @@ alias rbt='reboot'
 alias CD='cd'
 alias LS='ls'
 alias rst='reset'
+alias cls='clear'
 
 PS1='[\u@\h \W]\$ '
 
 # EXPORT PATH
 export HISTTIMEFORMAT="%A %d %B %Y %T  " 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$PATH:$HOME/fvm/default/bin"
+export PATH="$PATH:$HOME/.platformio/penv/bin"
 
 # EVAL
 eval "$(starship init bash)"

@@ -55,15 +55,13 @@
     "workbench.settings.applyToAllProfiles": [],
 
     "files.exclude": {
-        "**/.git": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true,
         "**/.dart_tool": true,
-        "**/.pub-cache": true,
+        "**/.DS_Store": true,
         "**/.flutter-plugins": true,
         "**/.flutter-plugins-dependencies": true,
-        "**/build": true,
+        "**/.git": true,
         "**/.gradle": true,
+        "**/.pub-cache": true,
         "**/android/.gradle": true
     },
     "files.watcherExclude": {
@@ -88,10 +86,29 @@
         {
             "name": "Qt-5.15.19-linux-g++-x86_64_from_PATH",
             "path": "/usr/sbin/qmake"
+        },
+        {
+            "name": "Qt-5.15.19-linux-g++-x86_64_from_PATH",
+            "path": "/usr/sbin/qtpaths"
         }
     ],
     "breadcrumbs.enabled": false,
     "breadcrumbs.icons": false,
     "dart.previewFlutterUiGuidesCustomTracking": true,
-    "dart.previewFlutterUiGuides": true
+    "dart.previewFlutterUiGuides": true,
+    "cmake.environment": {
+        "PATH": "/home/edelweiss/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-linux-x64/resources/cube-cmake/linux/x86_64:/home/edelweiss/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-linux-x64/resources/binaries/linux/x86_64:${env.PATH}"
+    },
+    "debug.allowBreakpointsEverywhere": true,
+    "explorer.confirmDelete": false,
+    "workbench.experimental.modernUI": false,
+    "dart.sdkPath": "/home/edelweiss/fvm/versions/stable/bin/cache/dart-sdk",
+
+    "editor.suggest.triggerSuggestOnTriggerCharacters": true,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
+    },
+    "editor.suggestOnTriggerCharacters": true
 }
