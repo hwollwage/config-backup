@@ -33,7 +33,7 @@ PS1='[\u@\h \W]\$ '
 
 # EXPORT PATH
 export HISTTIMEFORMAT="%A %d %B %Y %T  " 
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:$HOME/fvm/default/bin"
 export PATH="$PATH:$HOME/.platformio/penv/bin"
